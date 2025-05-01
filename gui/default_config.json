@@ -1,0 +1,48 @@
+{
+    "input": {
+        "file_path": "Article_Titles_List_1_100.xlsx",
+        "sheet_name": "Sheet1",
+        "title_column": "Title",
+        "used_column": "Used"
+    },
+    "app_settings": {
+        "start_with_windows": false,
+        "start_minimized": false,
+        "show_notifications": true,
+        "theme": "Light",
+        "accent_color": "Blue",
+        "log_level": "Info",
+        "max_history": 100
+    },
+    "wordpress": {
+        "url": "",
+        "username": "",
+        "password": "",
+        "use_application_password": false,
+        "category": "Blog",
+        "post_status": "draft",
+        "future_scheduling": false
+    },
+    "mode": "local",
+    "local": {
+        "endpoint": "http://localhost:1234/v1/chat/completions",
+        "model": "local-model",
+        "temperature": 0.7,
+        "max_tokens": 6000
+    },
+    "gemini": {
+        "api_key": "",
+        "model": "gemini-1.5-flash",
+        "temperature": 0.7,
+        "max_output_tokens": 4096
+    },
+    "generation": {
+        "post_template": "You are a professional content writer specializing in SEO-optimized blog posts. Write a complete, polished blog article directly without any planning, thoughts, brainstorming, or commentary. Do not include any <think> sections. Write only the final article cleanly. Use a professional yet easy-to-read tone, natural transitions, and appropriate H2 and H3 headings. Insert image placeholders where necessary using the exact format [Insert Image Prompt: realistic description of the image]. Structure the article with an engaging introduction, detailed main sections, and a call-to-action. The article title is: {title}",
+        "posts_per_day": 1,
+        "randomize_selection": true,
+        "image_placeholder_frequency": 600
+    },
+    "logging": {
+        "log_folder": "logs"
+    }
+}

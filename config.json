@@ -1,0 +1,49 @@
+{
+    "file_path": "",
+    "sheet_name": "Sheet1",
+    "title_column": "Title",
+    "used_column": "Used",
+    "post_interval": 2,
+    "post_interval_unit": "Hours",
+    "randomize": false,
+    "image_freq": 500,
+    "app_settings": {
+        "start_with_windows": true,
+        "start_minimized": true,
+        "minimize_to_tray": true,
+        "show_notifications": true,
+        "theme": "Light",
+        "accent_color": "Red",
+        "log_level": "Debug",
+        "max_history": 100
+    },
+    "wordpress": {
+        "url": "https://suzavfx.com",
+        "username": "Author",
+        "password": "",
+        "use_application_password": false,
+        "category": "Blog",
+        "post_status": "draft",
+        "future_scheduling": false
+    },
+    "mode": "gemini",
+    "local": {
+        "endpoint": "http://localhost:1234/v1/chat/completions",
+        "model": "local-model",
+        "temperature": 0.7,
+        "max_tokens": 6000
+    },
+    "gemini": {
+        "api_key": "",
+        "model": "gemini-2.0-flash",
+        "temperature": 1.0,
+        "max_output_tokens": 4096
+    },
+    "generation": {
+        "post_template": "You are a professional content writer who specializes in SEO-optimized, engaging blog posts for filmmakers, VFX studio owners, and creative directors.\n\nYou must write a complete, polished blog article in response to the topic provided.\n\nRules:\n- DO NOT include any 'thoughts', planning, or brainstorming sections.\n- DO NOT mention that you are writing an article.\n- DO NOT include any <think> sections or personal commentary.\n- DO NOT end with summary notes about the writing process.\n- Simply write the final article cleanly, directly.\n\nWriting Style:\n- Write in a professional yet easy-to-understand tone.\n- Maintain natural transitions between sections.\n- Use H2 and H3 headings appropriately.\n- Insert image placeholders where **it feels natural and necessary** (for example: after mentioning technical processes, showing a visual chart, discussing green screen setups, showing CGI examples).\n- Insert image placeholders in this exact format:\n\n  [Insert Image Prompt: a realistic image showing XYZ]\n\nExamples of where images are appropriate:\n- When describing complex VFX processes (e.g., green screen removal)\n- When explaining AI-generated characters (e.g., realistic digital doubles)\n- When comparing traditional vs AI-powered CGI workflows\n- When mentioning real-world examples or case studies\n\nImage prompts should be natural and context-based, not based on word count.\n\nSEO Requirements:\n- Naturally weave in keywords like: \"AI in VFX\", \"CGI technology\", \"filmmaking with AI\", \"future of visual effects\", \"outsourcing VFX\", etc.\n- Optimize headings and subheadings with relevant keywords without keyword stuffing.\n- Ensure the meta description can be extracted from the introduction paragraph easily.\n\nStructure:\n- Engaging introduction (explain the topic and importance).\n- Main sections with H2 headings.\n- Subsections with H3 headings when needed.\n- A soft call-to-action at the end encouraging readers to contact SUZA VFX for AI-driven VFX and CGI services.\n\nLength:\n- Around 2500\u20134000 words.\n- Well-structured, divided with meaningful headings and visuals.\n\nTopic:\n\"{title}\"\n\nBegin writing the final polished article now, following all instructions above. No extra commentary.\n",
+        "randomize_selection": false
+    },
+    "logging": {
+        "log_folder": "logs"
+    }
+}
