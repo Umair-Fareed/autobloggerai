@@ -1,7 +1,7 @@
 # autobloggerai
-# WordPress Poster
+# AutoBlogger AI - an AI-powered article writing solution for WordPress.
 
-WordPress Poster is a Python tool designed to automate content generation and WordPress publishing. It reads article titles from a spreadsheet, uses AI language models to generate articles, inserts image placeholders, and publishes the content to a WordPress site. It includes both a graphical user interface (GUI) and command-line interface for flexibility.
+AutoBlogger is a Python tool designed to automate content generation and WordPress publishing. It reads article titles from a spreadsheet, uses AI language models to generate articles, inserts image placeholders, and publishes the content to a WordPress site. It includes both a graphical user interface (GUI) and command-line interface for flexibility.
 
 ## Features
 
@@ -24,7 +24,7 @@ WordPress Poster is a Python tool designed to automate content generation and Wo
 
 - Python 3.10 or higher
 - One of the following LLM options:
-  - LM Studio or similar local API server running locally
+  - LM Studio or a similar local API server running locally
   - Google Gemini API key
 - WordPress site with XML-RPC enabled
 
